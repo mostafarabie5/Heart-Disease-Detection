@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4a9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* max-width: 600px; */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4a9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.header {
+  /* max-width: 600px;
+  margin: 50px auto; */
+  padding: 20px;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  /* border-radius: 8px; */
+}
+
+.title {
+  color: white;
+}
+
+.model {
+  margin-left: 25px;
+}
+
+.age-sex-painType {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.restingBP-cholesterol-fastingBS-maxHR {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.restingECG-exerciseAngina-oldpeak-stSlope {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sex-radio-buttons {
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #555;
+  margin-right: 7px;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  border: 1px solid #c1c1c1;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.age input {
+  width: 40px;
+  padding: 5px;
+}
+.restingBP input {
+  width: 40px;
+}
+
+.cholesterol input {
+  width: 40px;
+}
+.fastingBS input {
+  width: 40px;
+}
+.maxHR input {
+  width: 40px;
+}
+.oldpeak input {
+  width: 40px;
+}

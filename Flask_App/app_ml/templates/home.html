@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Data Input Form</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Health Data Input Form</h1>
+    </div>
+    <div class="container">
+      <form id="healthForm" action="/predict" method="post">
+        <div class="MachineLearning">
+          <h3>Select Machine Learning Model</h3>
+          <div class="model">
+            <label for="model">ML Model:</label>
+
+            <select id="algorithm" name="algorithm" required>
+              <option value="MLP">MLP</option>
+              <option value="KNN">KNN</option>
+              <option value="Logistic Regression">Logistic Regression</option>
+            </select>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="age-sex-painType">
+          <div class="age">
+            <label for="age">Age:</label>
+
+            <input type="number" id="age" name="Age" min="1" required />
+          </div>
+
+          <div class="sex-radio-buttons">
+            <label for="sex" class="sex">Sex:</label>
+
+            <input type="radio" id="male" name="Sex" value="M" />
+            <label for="male" class="male-sex">Male</label>
+
+            <input type="radio" id="female" name="Sex" value="F" />
+            <label for="female" class="female-sex">Female</label>
+          </div>
+
+          <div class="pain-type">
+            <label for="chestPainType">Chest Pain Type:</label>
+
+            <select id="chestPainType" name="ChestPainType" required>
+              <option value="TA">Typical Angina</option>
+              <option value="ATA">Atypical Angina</option>
+              <option value="NAP">Non-Anginal Pain</option>
+              <option value="ASY">Asymptomatic</option>
+            </select>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="restingBP-cholesterol-fastingBS-maxHR">
+          <div class="restingBP">
+            <label for="restingBP">Resting BP:</label>
+            <input
+              type="number"
+              id="restingBP"
+              name="RestingBP"
+              min="0"
+              required
+            />
+          </div>
+
+          <div class="cholesterol">
+            <label for="cholesterol">Cholesterol:</label>
+            <input
+              type="number"
+              id="cholesterol"
+              name="Cholesterol"
+              min="0"
+              required
+            />
+          </div>
+
+          <div class="fastingBS">
+            <label for="fastingBS">Fasting BS:</label>
+            <input
+              type="number"
+              id="fastingBS"
+              name="FastingBS"
+              min="0"
+              required
+            />
+          </div>
+
+          <div class="maxHR">
+            <label for="maxHR">Max HR:</label>
+            <input type="number" id="maxHR" name="MaxHR" min="0" required />
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="restingECG-exerciseAngina-oldpeak-stSlope">
+          <div class="restingECG">
+            <label for="restingECG">Resting ECG:</label>
+            <select id="restingECG" name="RestingECG" required>
+              <option value="Normal">Normal</option>
+              <option value="ST">ST-T Wave Abnormality</option>
+              <option value="LVH">Left Ventricular Hypertrophy</option>
+            </select>
+          </div>
+
+          <div class="exerciseAngina">
+            <label for="exerciseAngina">Exercise Angina:</label>
+            <select id="exerciseAngina" name="ExerciseAngina" required>
+              <option value="Y">Yes</option>
+              <option value="N">No</option>
+            </select>
+          </div>
+
+          <div class="oldpeak">
+            <label for="oldpeak">Oldpeak:</label>
+            <input
+              type="number"
+              step="0.1"
+              id="oldpeak"
+              name="Oldpeak"
+              min="0"
+              required
+            />
+          </div>
+
+          <div class="stSlope">
+            <label for="stSlope">ST Slope:</label>
+            <select id="stSlope" name="ST_Slope" required>
+              <option value="Up">Up</option>
+              <option value="Flat">Flat</option>
+              <option value="Down">Down</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

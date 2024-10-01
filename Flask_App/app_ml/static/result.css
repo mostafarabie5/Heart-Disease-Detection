@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.positive {
+  background-color: #fabcbc;
+  height: 100px;
+  padding: 10px 10px;
+}
+
+.negative {
+  background-color: #d6edd9;
+  height: 100px;
+  padding: 10px 10px;
+}
+
+.container {
+  margin: 50px 260px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
